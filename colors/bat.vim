@@ -1,5 +1,6 @@
 " taken from bat:
-let b:outer_space="#263238"    " dark blue (background colour)
+let b:outer_space="#000001"    " black (background colour)
+let b:outer_space="#222222"    " dark blue (background colour)
 let b:spring_wood="#f8f8f0"    " very light yellow
 let b:sunshade="#fe8a26"       " orange
 let b:malibu="#62d6fd"         " light blue
@@ -15,6 +16,7 @@ let b:storm_dust="#60605e"     " yet another shade of gray
 " customised:
 let b:sirocco="#747e80"        " gray (used for comments)
 let b:yellow="#ffff00"         " pure yellow
+let b:golden_yellow = "#ffb81c" " golden yellow
 
 set background=dark
 highlight clear
@@ -39,10 +41,10 @@ call  s:hi("VertSplit",       b:storm_dust,   b:storm_dust,   "NONE")
 call  s:hi("MatchParen",      b:malibu,       "NONE",         "underline")
 call  s:hi("StatusLine",      b:spring_wood,  b:storm_dust,   "bold")
 call  s:hi("StatusLineNC",    b:spring_wood,  b:storm_dust,   "NONE")
-call  s:hi("Pmenu",           "white",        b:tundora,      "NONE")
+call  s:hi("Pmenu",           "#00FFFF",        b:tundora,      "NONE")
 call  s:hi("PmenuSel",        "NONE",         b:outer_space,  "NONE")
-call  s:hi("IncSearch",       b:outer_space,  b:yellow,       "NONE")
-call  s:hi("Search",          b:outer_space,  b:yellow,       "NONE")
+call  s:hi("IncSearch",       b:outer_space,  b:golden_yellow,       "NONE")
+call  s:hi("Search",          b:outer_space,  b:golden_yellow,       "NONE")
 call  s:hi("Directory",       b:heliotrope,   "NONE",         "NONE")
 call  s:hi("Folded",          b:tundora,      b:outer_space,  "NONE")
 call  s:hi("Normal",          b:spring_wood,  b:outer_space,  "NONE")
@@ -64,7 +66,7 @@ call  s:hi("NonText",         b:mine_shaft,   b:outer_space,  "NONE")
 call  s:hi("Number",          b:heliotrope,   "NONE",         "NONE")
 call  s:hi("Operator",        b:carnation,    "NONE",         "NONE")
 call  s:hi("PreProc",         b:malibu,       "NONE",         "NONE")
-call  s:hi("TSProperty",      "white",        "NONE",         "NONE")
+call  s:hi("TSProperty",      "#00FFFF",        "NONE",         "NONE")
 call  s:hi("Special",         "#af87fc",      "NONE",         "NONE")
 call  s:hi("SpecialKey",      b:mine_shaft,   "NONE",         "NONE")
 call  s:hi("Statement",       b:carnation,    "NONE",         "NONE")
